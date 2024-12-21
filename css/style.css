@@ -1,0 +1,224 @@
+
+video, img, canvas{
+    max-width: 100%;
+}
+
+
+  h1.title {
+    text-align: center;
+    padding: 120px;
+    color: #3e171d;
+    font-size: 20pt;
+    
+  }
+
+p {
+  font-size: 16pt;
+}
+
+.page-header {
+  background-image: url('/img/bg.jpg'); 
+  background-size: cover; 
+  background-position: top; 
+  height: 300px;
+}
+
+body {
+  background-color: pink;
+}
+input#searchInput {
+  width: 217px;
+}
+
+.srcBtn {
+  background-color: #b3e8bd;
+  border: none;
+  border-radius: 5px;
+  font-family: "Assistant SemiBold";
+  padding: 0 10px ;
+}
+.navbar {
+  background-color: #b3e8bd;
+  
+}
+.navbar-nav { 
+  width: 100%;
+  list-style-type: none;
+  padding: 50px 20px;
+}
+.navbar-nav a {
+  text-decoration: none; 
+  color: #3e171d; 
+}
+
+.my-title{
+  background-color: pink;
+}
+/* מצב לילה */
+.dark-mode {
+  background-color: #73022C;
+  
+}
+.dark-mode .my-title{
+  background-color: #d41e60;
+}
+.dark-mode h1, .dark-mode p, .dark-mode a {
+  color: #fff;
+}
+button.dark-mode {
+  background-color: #333333;
+  color: white;
+}
+
+.dark-mode .srcBtn {
+  background-color: #d41e60;
+  color: #fff;
+}
+
+body.dark-mode .page-header {
+  background-color: #73022C;
+  background-image: url('/img/bg_darkMode.jpg'); 
+  background-size: cover;
+  background-position: center -50px;
+  height: 300px;
+  overflow: hidden; 
+  
+}
+
+body.dark-mode .title {
+  color: #ffffff;
+}
+body.dark-mode .navbar {
+  background-color: #D41E60;
+}
+body.dark-mode .navbar-nav {
+  background-color: #D41E60; 
+}
+body.dark-mode .form-control {
+  background-color: #ffffff;
+  color: #40010D;
+}
+.dark-mode .my-card {
+  background-color: #40010D;
+  color: #fff;
+  border: 3px solid #37010b;
+}
+.my-card {
+  background-color:palevioletred;
+  border: 3px solid #ca6888;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 -4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+.my-body-text {
+  font-size: 5vw; 
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-5%, -50%); /* Exact centering */
+  width: 90%; /* Make the modal wider */
+  height: auto; /* Allow the height to adjust based on content */
+  background-color: palevioletred;
+  padding: 20px;
+  z-index: 1000; /* Ensure the modal is on top */
+  border-radius: 15px;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  
+}
+
+.modal-content {
+  font-size: 10px; /* Make the text smaller */
+  padding: 10px;
+}
+.close-button {
+  position: absolute;
+  top:0;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+body.dark-mode .modal{
+  background-color: #40010D;
+}
+
+.card {
+
+  flex: 0 0 100%;
+}
+
+h5 {
+  z-index: 1;
+}
+
+@media only screen and (min-width: 920px) {
+  .modal {
+    width: 50%;
+    height: auto;
+    top: 32%; /* Position in the center vertically */
+    left: 50%; /* Position in the center horizontally */
+    right: 0%;
+    transform: translate(-50%, -50%);
+  }
+  .modal-content {
+    position: relative;
+    padding: 20px;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .navbar-nav.hide-mobile {
+
+    padding: 1rem; 
+    background-color: #b3e8bd; 
+    
+  }
+
+
+  a {
+        margin: 20px 10px;
+       text-decoration-line: none;
+  }
+li { 
+  color: white; 
+    } 
+
+  p { 
+    width: 100%;
+    text-align: center;
+    font-size: 18pt;
+  }
+
+  h1.title {
+    text-align: center;
+    padding: 211px;
+    font-size: 25pt;
+  }
+  .card {
+  flex: 0 0 calc(20% - 20px);
+    height: 100%; /* שומר על גובה אחיד */
+    margin: 10px; /* רווחים חיצוניים לכרטיס */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* מוסיף הצללה קלה */
+    border-radius: 8px; /* פינות מעוגלות */
+    
+  }
+  .my-body-text {
+    font-size: 0.9vw;
+    
+    
+  }
+
+  body.dark-mode .page-header {
+    background-position: center -130px;
+  }
+}
+
+
+
